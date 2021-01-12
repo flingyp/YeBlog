@@ -1,0 +1,107 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--font-color-primary);
+  font-weight: bolder;
+}
+
+.bread-div {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+  background-color: #e1f0ff;
+}
+.detailed-title {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem;
+}
+.center {
+  text-align: center;
+}
+.detailed-content {
+  padding: 1.3rem;
+  font-size: 1rem;
+}
+pre {
+  display: block;
+  background-color: #353b48 !important;
+  padding: 0 !important;
+  overflow-y: auto;
+  font-weight: 300;
+  font-family: Menlo, monospace;
+  border-radius: 0.3rem;
+  padding-top: 1.5rem !important;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+}
+pre:before {
+  content: ' ';
+  position: absolute;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fc625d;
+  width: 11px;
+  height: 11px;
+  transform: translate(0.5rem, -1rem);
+  -webkit-box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+  z-index: 2;
+}
+pre > code {
+  padding: 5px 15px;
+  border: 0px !important;
+  background-color: #b9b9b911 !important;
+  color: #fdfdfd;
+  width: 100%;
+}
+code {
+  display: inline-block;
+  background-color: #353b48;
+  border: 1px solid rgba(52, 152, 219, 0.2);
+  border-radius: 3px;
+  padding: 0 8px;
+  color: #fdfdfd;
+  margin: 0 5px;
+}
+
+.title-anchor {
+  color: #888 !important;
+  padding: 4px !important;
+  margin: 0rem !important;
+  height: auto !important;
+  line-height: 1.2rem !important;
+  font-size: 0.7rem !important;
+  border-bottom: 1px dashed #eee;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.active {
+  color: rgb(30, 144, 255) !important;
+}
+.nav-title {
+  text-align: center;
+  color: #888;
+  border-bottom: 1px solid rgb(30, 144, 255);
+}
+.article-menu {
+  font-size: 12px;
+}
+iframe {
+  height: 34rem;
+}
+.detailed-content img {
+  width: 100%;
+  border: 1px solid #f3f3f3;
+}
+.title-level3 {
+  display: none !important;
+}
+.ant-anchor-link-title {
+  font-size: 12px !important;
+}
+.ant-anchor-wrapper {
+  padding: 5px !important;
+}

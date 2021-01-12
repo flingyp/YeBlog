@@ -1,0 +1,38 @@
+@mixin theme(
+  $theme-bg-1,
+  $theme-bg-2,
+  $font-color-primary,
+  $font-color-article,
+  $font-color-coverposter,
+) {
+  --blog-theme-bg-1: #{$theme-bg-1};
+  --blog-theme-bg-2: #{$theme-bg-2};
+
+  --font-color-primary: #{$font-color-primary};
+  --font-color-article: #{$font-color-article};
+  --font-color-coverposter: #{$font-color-coverposter};
+}
+
+body {
+  &#light {
+    @include theme(
+      $theme-bg-1: rgba(299,299,299,1.0),
+      $theme-bg-2: rgba(236, 240, 241,1.0),
+
+      $font-color-primary: rgba(25, 42, 86, 1),
+      $font-color-article: rgba(59, 59, 152,1.0),
+      $font-color-coverposter:rgba(247, 241, 227,1.0),
+    )  
+  }
+
+  &#dark {
+    @include theme(
+      $theme-bg-1: rgba(53, 59, 72,1.0),
+      $theme-bg-2: rgba(53, 59, 72, .5),
+
+      $font-color-primary: rgba(220, 221, 225,1.0),
+      $font-color-article: rgba(255, 255, 255,1.0),
+      $font-color-coverposter: rgba(247, 241, 227,1.0),
+    )
+  }
+}
