@@ -10,7 +10,11 @@
 
 - `docsify init ./docs`
 
-## 3. 设置名字和仓库地址
+## 3. 本地预览
+
+- `docsify serve docs`
+
+## 4. 设置名字和仓库地址
 
 ```html
 <!-- index.html -->
@@ -24,7 +28,7 @@
 </script>
 ```
 
-## 4. 设置封面
+## 5. 设置封面
 
 - 设置 **coverpage 字段** 为 true
 
@@ -41,7 +45,7 @@ Ye Blog
 [开发历程]()
 ```
 
-## 5. 配置侧边栏
+## 6. 配置侧边栏
 
 - 设置 **loadSidebar 字段** 为 true
 
@@ -51,6 +55,6 @@ Ye Blog
 - [docsify 文档简单编写介绍](/develop/docsify)
 ```
 
-## 6. 写内容
+## 7. 写内容
 
 可以在 docs 目录下直接编写 md 文件或者创建文件夹去编写 md 文件。然后去配置侧边栏的链接指向该文件即可。

@@ -5,4 +5,4 @@
 - 个人博客 | 支持暗黑主题 | 使用 MarkDown 语法
 
 [GitHub](https://github.com/flingyp/YeBlog)
-[开发历程](http://localhost:3000/#/?id=headline)
+[搭建笔记](/?id=main)
