@@ -12,9 +12,9 @@
 
 ## 1. 用到的字体网站
 
-- [1](https://ziyouziti.com/index-index-all.html)
+- [字体网站 1](https://ziyouziti.com/index-index-all.html)
 
-- [2](https://font.chinaz.com/yingwenziti_3.html)
+- [字体网站 2](https://font.chinaz.com/yingwenziti_3.html)
 
 ## 2. 安装 scss
 
@@ -75,45 +75,45 @@ css: [
 // 3. 在 @mixin 中 定义的是 CSS变量
 // 4. 在 具体页面上 使用 通过 var(xxxcss变量)
 @mixin theme(
-  $theme-bg-1,
-  $theme-bg-2,
-  $font-color-primary,
-  $font-color-article,
-  $font-color-coverposter
+	$theme-bg-1,
+	$theme-bg-2,
+	$font-color-primary,
+	$font-color-article,
+	$font-color-coverposter
 ) {
-  --blog-theme-bg-1: #{$theme-bg-1};
-  --blog-theme-bg-2: #{$theme-bg-2};
+	--blog-theme-bg-1: #{$theme-bg-1};
+	--blog-theme-bg-2: #{$theme-bg-2};
 
-  --font-color-primary: #{$font-color-primary};
-  --font-color-article: #{$font-color-article};
-  --font-color-coverposter: #{$font-color-coverposter};
+	--font-color-primary: #{$font-color-primary};
+	--font-color-article: #{$font-color-article};
+	--font-color-coverposter: #{$font-color-coverposter};
 }
 
 body {
-  &#light {
-    @include theme(
-      $theme-bg-1: rgba(299, 299, 299, 1),
-      $theme-bg-2: rgba(236, 240, 241, 1),
-      $font-color-primary: rgba(25, 42, 86, 1),
-      $font-color-article: rgba(59, 59, 152, 1),
-      $font-color-coverposter: rgba(247, 241, 227, 1)
-    );
-  }
+	&#light {
+		@include theme(
+			$theme-bg-1: rgba(299, 299, 299, 1),
+			$theme-bg-2: rgba(236, 240, 241, 1),
+			$font-color-primary: rgba(25, 42, 86, 1),
+			$font-color-article: rgba(59, 59, 152, 1),
+			$font-color-coverposter: rgba(247, 241, 227, 1)
+		);
+	}
 
-  &#dark {
-    @include theme(
-      $theme-bg-1: rgba(53, 59, 72, 1),
-      $theme-bg-2: rgba(53, 59, 72, 0.5),
-      $font-color-primary: rgba(220, 221, 225, 1),
-      $font-color-article: rgba(255, 255, 255, 1),
-      $font-color-coverposter: rgba(247, 241, 227, 1)
-    );
-  }
+	&#dark {
+		@include theme(
+			$theme-bg-1: rgba(53, 59, 72, 1),
+			$theme-bg-2: rgba(53, 59, 72, 0.5),
+			$font-color-primary: rgba(220, 221, 225, 1),
+			$font-color-article: rgba(255, 255, 255, 1),
+			$font-color-coverposter: rgba(247, 241, 227, 1)
+		);
+	}
 }
 
 // 测试  某个页面或组件
 .test {
-  color: var(--font-color-primary);
+	color: var(--font-color-primary);
 }
 ```
 
@@ -132,17 +132,17 @@ import hljs from 'highlight.js'
 import 'highlight.js/styles/monokai-sublime.css'
 // 配置相关选项
 marked.setOptions({
-  renderer: new marked.Renderer(),
-  gfm: true,
-  pedantic: false,
-  sanitize: false,
-  tables: true,
-  breaks: true,
-  smartLists: true,
-  highlight: (code, language) => {
-    const validLanguage = hljs.getLanguage(language) ? language : 'plaintext'
-    return hljs.highlight(validLanguage, code).value
-  },
+	renderer: new marked.Renderer(),
+	gfm: true,
+	pedantic: false,
+	sanitize: false,
+	tables: true,
+	breaks: true,
+	smartLists: true,
+	highlight: (code, language) => {
+		const validLanguage = hljs.getLanguage(language) ? language : 'plaintext'
+		return hljs.highlight(validLanguage, code).value
+	}
 })
 // 挂在到Vue实例上
 Vue.prototype.$marked = marked
