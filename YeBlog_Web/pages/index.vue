@@ -14,6 +14,13 @@ export default {
     CoverPoster,
     ArticleList,
   },
+  async asyncData({ $axios }) {
+    const res = await $axios.$get('/getArticles')
+    return { res }
+  },
+  created() {
+    console.log('res', this.res)
+  },
 }
 </script>
 

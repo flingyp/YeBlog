@@ -1,4 +1,4 @@
-# Ye Blog
+# YeBlog
 
 > 基于 Nuxt.js + Vue2.0 个人博客
 
