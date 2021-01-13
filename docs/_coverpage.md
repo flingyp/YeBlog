@@ -6,3 +6,5 @@
 
 [GitHub](https://github.com/flingyp/YeBlog)
 [搭建笔记](/?id=main)
+
+![](http://s7.sinaimg.cn/orignal/6223dc05x744d5399ed36&690)
